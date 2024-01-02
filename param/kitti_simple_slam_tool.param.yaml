@@ -1,0 +1,10 @@
+/**:
+  ros__parameters:
+      # NDT TransformationEpsilon
+      NDTTransEpsilon: 0.01
+
+    # NDT step size
+      NDTStepSize: 0.1
+
+    # NDT Resolution
+      NDTResolution: 3.0

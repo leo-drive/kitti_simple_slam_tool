@@ -1,0 +1,12 @@
+<launch>
+
+    <arg name="save_pc_dir" default="/home/melike/Desktop/KITTI/maps/gt_maps/test.pcd"/>
+    <arg name="param_file" default="$(find-pkg-share kitti_simple_slam_tool)/param/kitti_simple_slam_tool.param.yaml"/>
+
+    <node pkg="kitti_simple_slam_tool" exec="kitti_simple_slam_tool" name="kitti_simple_slam_tool" output="screen">
+        <param name="save_pc_dir" value="$(var save_pc_dir)"/>
+        <param from="$(var param_file)"/>
+
+    </node>
+
+</launch>
