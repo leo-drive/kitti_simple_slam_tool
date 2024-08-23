@@ -2,7 +2,7 @@
 
 This package creates a map using the ground truth data in the [Kitti dataset](https://www.cvlibs.net/datasets/kitti/).
 It matches the times of the incoming point cloud and the ground truth path (Using Approximate time). 
-Since exact time is not used (these datas are not sync), some shifts occur when the point cloud is positioned according to ground truth. 
+Since exact time is not used, some shifts occur when the point cloud is positioned according to ground truth. 
 To correct these shifts, it registers and corrects each point cloud using NDT before adding it to the global map. 
 In this way, a global point cloud is obtained with a simple slam application.
 
